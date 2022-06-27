@@ -39,6 +39,10 @@ public class ProductRepository {
         findProduct.setLocation(updateParam.getLocation());
     }
 
+    public void deleteById(Long productId) {
+        store.remove(productId);
+    }
+
     public void clearStore() {
         store.clear();
     }
